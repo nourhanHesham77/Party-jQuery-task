@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 3rem 0;
+}
+
+main{
+    background-image:linear-gradient(rgba(250,0,0,0.4), rgba(250,0,0,0.4)), url('images/back4.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.sidebar{
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    left: -25%;
+    transition: all 0.9s ease-in-out;
+}
+.sidebar-icon{
+    padding: 1.1rem;
+    text-align: end;
+    color: #fff;
+}
+.sidebar-toggle{
+    display: inline-flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    transition: all 0.9s ease-in-out;
+}
+
+.show-sidebar{
+    left: 0;
+    transition: all 0.9s ease-in-out;
+}
+.sidebar-toggle-show{
+    left: 25%;
+    transition: all 0.9s ease-in-out;
+}
+
+.fa-times{
+    animation: rotation 2s infinite ;
+
+}
+.fas{
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+}
+.text-side{
+    margin-left: 5px;
+    font-size: 2.5rem;
+}
+
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.text{
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    left: 36%;
+    transition: all 0.9s ease-in-out;
+}
+.text h1,h4{
+    display: block;
+}
+.text h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.text-show{
+    left: 55%;
+    transition: all 0.9s ease-in-out;
+}
+.txt-item{
+    font-size: 2rem;
+    margin: 2.5rem 0;
+}
+.txt-item a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.divs-container{
+    width: 40%;
+    margin: auto;
+    margin-top: 3rem;
+}
+.div-contain{
+background-color: rgb(230, 130, 133);
+color: #fff;
+align-items: center;
+text-align: center;
+padding: 3rem 2rem;
+font-size: 1.6rem;
+font-weight: bold;
+cursor: pointer;
+}
+
+.div-drop{
+    background-color: #cccccc;
+    color: black;
+    display: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.footer{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.4) , rgba(255, 0, 0, 0.4)) , url(images/join.jpg);
+    margin-top: 3rem;
+    height: 50vh;
+}
+.footer-container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 5.5rem;
+    justify-content: space-between;
+}
+
+.footer-container .contain{
+    padding: 3.5rem;
+    text-align: center;
+    border: 2px #fff solid;
+    margin: 0 3.5rem;
+    color: #fff;
+    font-size: 2rem;
+    width: calc(80%/4);
+}
+
+@media screen and (max-width:740px){
+    .footer-container{
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .footer-container .contain{
+        padding: 2rem 0.5rem;
+        margin: 0 1rem;
+        font-size: 1rem;
+        width: calc(90%/4);
+    }
+
+    .footer{
+        height: 30vh;
+       background-repeat: no-repeat;
+    }
+    .sidebar{
+        width: 45%;
+        left: -45%;
+    }
+    .show-sidebar{
+        left: 0%;
+    }
+    .sidebar-toggle-show{
+        left: 45%;
+    }
+    .text h1{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .text{
+        top: 25%;
+    }
+    
+.divs-container{
+    width: 85%;
+}
+}
